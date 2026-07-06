@@ -1,6 +1,6 @@
 ---
 name: experts
-description: Use when a project needs multi-perspective review — pre-launch audit, post-refactor check, inherited codebase assessment, or periodic health check. Dispatches parallel expert reviewer agents with persona framing.
+description: Multi-perspective technical review of a project by specialized expert reviewer agents (SEO, accessibility, security, performance, and more). Use when doing a pre-launch audit, post-refactor check, inherited codebase assessment, or periodic health check of any project type.
 ---
 
 # Expert Panel
