@@ -1,6 +1,6 @@
 ---
 name: normies
-description: Use when you want to see a site through fresh eyes — how different types of people experience it for the first time. Dispatches agents with varying tech sophistication who land on the site cold and report confusion, friction, and first impressions.
+description: Tests whether real visitors understand a site by simulating personas across the sophistication spectrum (expert to novice), reporting confusion, friction, and first impressions rather than technical correctness. Use before launch, after a redesign, or when a landing page needs clarity validation. Requires a running dev server and browser MCP tools.
 ---
 
 # Normies
@@ -10,6 +10,11 @@ description: Use when you want to see a site through fresh eyes — how differen
 Dispatch a panel of subagents, each role-playing a person with a different level of tech sophistication, who land on a site with zero context. They report what they understand, what confuses them, and where they give up. The organizing principle is the **sophistication spectrum** — from expert to novice.
 
 **This is NOT a technical review.** The review-squad:experts skill handles code quality, SEO, accessibility compliance, etc. This skill answers: "Do real people understand my site?"
+
+## Prerequisites
+
+- **Running dev server** — agents navigate a live URL; no static file access or localhost workarounds.
+- **Browser MCP tools** — the claude-in-chrome (or equivalent) MCP server must be connected and configured for the target site. Without it, agents cannot render pages or take screenshots, making this skill ineffective.
 
 ## When to Use
 

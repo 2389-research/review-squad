@@ -1,6 +1,6 @@
 {
   "name": "review-squad",
-  "description": "Dispatch panels of specialized subagents to review projects from multiple angles — expert audits, first-impression personas, task-completion flows, and pedantic nitpicks",
+  "description": "Multi-angle project review covering expert audits, visitor comprehension testing, task-completion smoke tests, and adversarial nitpick passes. Use when you want a thorough pre-launch review or a targeted quality check from any angle.",
   "version": "1.0.0",
   "commands": []
 }

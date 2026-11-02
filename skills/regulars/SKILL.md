@@ -1,6 +1,6 @@
 ---
 name: regulars
-description: Use when you want to verify a site works by having agents act as real users completing common tasks — browsing, subscribing, purchasing, searching. Each agent has a goal and clicks through the real flow using browser MCP tools.
+description: Verifies that key user flows work end-to-end by having agents role-play real users completing site-specific tasks on a live site. Use before launch, after deploy, or after a refactor to confirm critical paths still work. Requires a running dev server and browser MCP tools.
 ---
 
 # Regulars
@@ -10,6 +10,11 @@ description: Use when you want to verify a site works by having agents act as re
 Dispatch a panel of subagents, each role-playing a real user with a specific task to complete on the site. They navigate using browser MCP tools, attempt to complete their goal, and report what broke, what was frustrating, and whether they succeeded. The organizing principle is **task completion** — can users do what they came to do?
 
 **This is NOT a QA test suite or expert audit.** Regulars agents behave like real users — they don't inspect source code, they don't check every element, and they don't follow a test matrix. They try to accomplish a goal the way a real person would.
+
+## Prerequisites
+
+- **Running dev server** — agents navigate a live URL; every task requires a real, accessible site.
+- **Browser MCP tools** — the claude-in-chrome (or equivalent) MCP server must be connected and configured for the target site. Without it, agents cannot click through flows or take screenshots.
 
 ## When to Use
 
@@ -56,38 +61,7 @@ Unlike review-squad:experts (fixed default panel) or review-squad:normies (fixed
 
 ### Example Panels by Site Type
 
-**Personal blog/portfolio:**
-
-| # | Persona | Task |
-|---|---------|------|
-| 1 | Recruiter scanning quickly | Find what this person does and their experience |
-| 2 | Blog reader | Find a post on a specific topic and read it |
-| 3 | Old friend | Find contact info or a way to reach out |
-| 4 | RSS subscriber | Find and subscribe to the RSS feed |
-| 5 | Social media visitor | Land on a shared blog post, explore from there |
-| 6 | Fellow developer | Find their GitHub/projects |
-
-**E-commerce:**
-
-| # | Persona | Task |
-|---|---------|------|
-| 1 | Gift shopper | Find something under $50, add to cart, start checkout |
-| 2 | Comparison shopper | Browse a category, filter/sort, compare two products |
-| 3 | Return visitor | Find order status or return policy |
-| 4 | Newsletter subscriber | Find and complete the signup form |
-| 5 | Mobile buyer | Complete a purchase on a phone-sized viewport |
-| 6 | Coupon user | Apply a discount code at checkout |
-
-**SaaS/product site:**
-
-| # | Persona | Task |
-|---|---------|------|
-| 1 | Evaluator | Understand the product and find pricing |
-| 2 | Free trial user | Sign up for a trial account |
-| 3 | Support seeker | Find documentation or help |
-| 4 | Enterprise buyer | Find enterprise/contact sales info |
-| 5 | Existing user | Log in and check account settings |
-| 6 | Developer | Find API docs or integration guide |
+See [references/example-panels.md](../../references/example-panels.md) for ready-made panels for personal blogs/portfolios, e-commerce sites, and SaaS/product sites.
 
 ## Agent Prompt Template
 

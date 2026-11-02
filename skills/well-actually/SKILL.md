@@ -1,6 +1,6 @@
 ---
 name: well-actually
-description: Use when you want pedantic, nitpicky, opinionated feedback on a site or project — the kind of feedback you'd get from Hacker News commenters, typography snobs, grammar pedants, and standards purists. Finds the things that professional reviewers skip because they're "too minor."
+description: Adversarial, contrarian review pass that catches the nitpicks professional auditors skip — typography crimes, grammar sins, standards violations, inconsistent pixels, and questionable tech choices. Use before any public launch, after you think you're done, or when you want that final 5% of polish before shipping.
 ---
 
 # Well, Actually...
